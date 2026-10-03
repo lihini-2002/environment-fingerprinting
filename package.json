@@ -1,0 +1,18 @@
+{
+  "name": "npm-probing-package",
+  "version": "0.1.0",
+  "description": "Execution environment probes for a research project.",
+  "private": true,
+  "type": "module",
+  "exports": "./src/index.js",
+  "files": ["src", "scripts/postinstall.js", "catalog", "README.md"],
+  "scripts": {
+    "postinstall": "node scripts/postinstall.js",
+    "test": "node --test",
+    "example": "node examples/collect.js",
+    "pack:check": "npm pack --dry-run"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
